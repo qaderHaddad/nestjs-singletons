@@ -8,6 +8,7 @@ export class FirstConsumerService {
     private readonly dependencyService: DependencyService
   ) {
     console.log('Created FirstConsumerService');
+    this.dependencyService.logToConsole();
   }
   
 }

@@ -8,7 +8,7 @@ import { SecondConsumerService } from './second-consumer.service'
     DependencyServiceModule
   ],
   providers: [
-    DependencyService, 
+    // DependencyService, 
     SecondConsumerService
   ]
 })

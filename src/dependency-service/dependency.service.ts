@@ -7,4 +7,8 @@ export class DependencyService {
     console.log("-- Created DependencyService");
   }
   
+  logToConsole() {
+    console.log('I AM DEPENDENCY SERVICE');
+  }
+  
 }
