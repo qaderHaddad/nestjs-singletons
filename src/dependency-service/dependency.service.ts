@@ -4,7 +4,7 @@ import { Injectable } from '@nestjs/common'
 export class DependencyService {
   
   constructor() {
-    console.log("Instance created");
+    console.log("-- Created DependencyService");
   }
   
 }

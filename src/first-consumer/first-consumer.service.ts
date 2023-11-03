@@ -6,6 +6,8 @@ export class FirstConsumerService {
   
   constructor(
     private readonly dependencyService: DependencyService
-  ) {}
+  ) {
+    console.log('Created FirstConsumerService');
+  }
   
 }
