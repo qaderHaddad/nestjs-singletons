@@ -1,12 +1,7 @@
-import { Injectable, Module } from '@nestjs/common'
-
+import { Module } from '@nestjs/common'
 import { DependencyServiceModule } from '../dependency-service/dependency-service.module'
 import { DependencyService } from '../dependency-service/dependency.service'
-
-@Injectable()
-class FirstConsumer {
-  constructor(private readonly dependency: DependencyService) {}
-}
+import { FirstConsumerService } from './first-consumer.service'
 
 @Module({
   imports: [
@@ -14,13 +9,13 @@ class FirstConsumer {
   ],
   providers: [
     DependencyService, 
-    FirstConsumer
+    FirstConsumerService
   ]
 })
 export class FirstConsumerModule {
   
   constructor(
-    private readonly first: FirstConsumer
+    private readonly firstConsumerService: FirstConsumerService
   ) {}
   
 }
