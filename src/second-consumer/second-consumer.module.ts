@@ -12,10 +12,4 @@ import { SecondConsumerService } from './second-consumer.service'
     SecondConsumerService
   ]
 })
-export class SecondConsumerModule {
-  
-  constructor(
-    private readonly secondConsumerService: SecondConsumerService
-  ) {}
-  
-}
+export class SecondConsumerModule {}
